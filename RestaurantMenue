@@ -1,0 +1,39 @@
+public class RestaurantMenue
+{
+    //declare instance variables here
+	String itemName;
+	double price;
+	String category;
+	
+	public RestaurantMenue(String itemName, double price, String category)
+	{
+		this.itemName = itemName;
+		this.price = price;
+		this.category = category;
+	}
+    public void priceForTwo()
+    {
+    	System.out.println("Item Name = "+itemName);
+    	System.out.println("Price = "+price+"$");
+    	System.out.println("Category = "+category);
+    	System.out.println("Price for Two Persons = "+price*2+"$");
+    }
+    public static void main(String[] args)
+    {
+        // Creating instances of RestaurantMenue
+        
+        // Printing instance variables and price for two persons for food1
+        RestaurantMenue food1 = new RestaurantMenue("Grilled Salmon", 16.99, "Main");
+        // Printing instance variables and price for two persons for food2
+        RestaurantMenue food2 = new RestaurantMenue("Chocolate Cake" , 6.49, "Dessert");
+        //print in standard output formatting
+        	food1.priceForTwo();
+        	food2.priceForTwo();
+        // Item Name = 
+        // Price = 
+        // Category = 
+        // Price for Two Persons = 
+        
+    }
+
+}
