@@ -1,0 +1,17 @@
+public class Person
+{
+//declare instance variables here
+	String name;
+	int age;
+public static void main(String[] args)
+{
+	Person person = new Person();
+	person.name = "Bill";
+	person.age = 25;
+	System.out.println("name = "+person.name);
+	System.out.println("age = "+person.age);
+//use new to instantiate a Person object
+//set its instance variables
+//print in standard output formatting
+}
+}
