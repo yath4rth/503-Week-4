@@ -1,0 +1,19 @@
+public class BankAccount
+{
+	String name; 
+	int balance;
+	
+public static void main(String[] args)
+{
+//use new to instantiate a BankAccount object
+	BankAccount bankAccount = new BankAccount();
+	String name = "Robin Banks";
+	int balance = 10;
+	
+	bankAccount.name = "Robin Banks";
+	bankAccount.balance = 10;
+	
+	System.out.println("name = "+bankAccount.name);
+	System.out.println("balance = "+bankAccount.balance);
+}
+}
