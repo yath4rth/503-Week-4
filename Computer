@@ -1,0 +1,44 @@
+public class Computer
+{
+    //declare instance variables here
+    String brand;
+    int ramSize;
+    int storageCapacity;
+    
+    public Computer (String brand, int ramSize, int storageCapacity)
+    {
+    	this.brand = brand;
+    	this.ramSize = ramSize;
+    	this.storageCapacity = storageCapacity;
+    	
+    }
+    
+  void displaySpecs()
+    {
+    	System.out.println("Brand = "+brand);
+    	System.out.println("RAM Size = "+ramSize+" GB");
+    	System.out.println("Storage Capacity = "+storageCapacity+" GB");
+    }
+    
+    public static void main(String[] args)
+    {
+        // Creating instances of Computer
+        
+        
+        // Printing computer specification for computer 1        
+        Computer dell = new Computer("Dell", 16, 512);
+        Computer HP = new Computer("HP", 8, 256);		
+        
+        // Printing computer specification for computer 2       
+       
+        
+        
+        //print in standard output formatting
+        // Brand = 
+        // RAM Size = 
+        // Storage Capacity = 
+        dell.displaySpecs();
+        HP.displaySpecs();
+    }
+
+}
