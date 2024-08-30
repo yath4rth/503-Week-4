@@ -1,0 +1,41 @@
+public class Visa
+{
+	//declare instance variables here
+	String name;
+	int kind;
+	//write constructor here
+	public Visa(String name, int kind)
+	{
+		this.name = name;
+		this.kind = kind;
+	}
+	//write description method here
+	public void description()
+	{
+		if(kind==1)
+		{
+			System.out.println("description = Permanent");
+		}
+		else if(kind==2)
+		{
+			System.out.println("description = Temporary");
+		}
+		else
+		{
+			System.out.println("description = Other");
+		}
+	}
+	public static void main(String[] args)
+		{
+		//initialise two instance of Visa
+		Visa visa = new Visa("John", 1);
+		Visa visa2 = new Visa("June", 2);
+		//print formatted output for name, kind and description
+		System.out.println("name = "+visa.name);
+		System.out.println("kind = "+visa.kind);
+		visa.description();
+		System.out.println("name = "+visa2.name);
+		System.out.println("kind = "+visa2.kind);
+		visa2.description();
+		}
+}
