@@ -10,31 +10,32 @@ public class Passenger {
     }
     
     //Write a method to compute the fare according to the conditions
-   public void computeFare()
+   public double computeFare()
    {
-	   System.out.println("age = "+age);
-	   System.out.println("student = "+student);
 	   
 	   if (age>=0 && age <=10)
 	   {
-		   System.out.println("computeFare = 0.0");
+		   return 0.0;
 	   }
 	   else if (age>=65)
 	   {
 		   
-		   System.out.println("computeFare = 1.25");
+		   return 1.25;
 	   }
 	   else if (student == true)
 		   {
-			   System.out.println("computeFare = 1.5");
+			   return 1.5;
 		   }
 	   else
 	   {
-		   System.out.println("computeFare = 2.0");
+		   return 2.0;
 	   }
 	   
    }
-     
+    
+   public void display() {
+	   System.out.println( "age = "+age+"\nstudent = "+student+"\ncomputeFare = "+computeFare());
+   }
     
     //Complete the main method
     public static void main(String[] args) {
@@ -43,9 +44,9 @@ public class Passenger {
        Passenger p2 = new Passenger(3,false);
        Passenger p3 = new Passenger(70,true);
         // Print instance variables and fare in standard output format  
-       p1.computeFare();
-       p2.computeFare();
-       p3.computeFare();
+       p1.display();
+       p2.display();
+       p3.display();
       
     }
 }
